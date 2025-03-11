@@ -1,0 +1,70 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: cyan;
+    color: brown;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: white;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: grey;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+    background-color: #555;
+    color: white;
+}
+
+/* Section Styles */
+section {
+    padding: 1rem 2rem;
+    min-height: 50vh;
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #f1f1f1;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    nav ul li {
+        display: block;
+    }
+}
